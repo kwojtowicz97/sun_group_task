@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MainButton from '@/components/MainButton.vue'
+import { scrollToForm } from '@/utils'
 </script>
 
 <template>
@@ -29,7 +30,9 @@ import MainButton from '@/components/MainButton.vue'
             Model CUPRA, który idealnie wpisuje się w DNA marki. Unikalny SUV coupé, wyjątkowy,
             odważny i innowacyjny – zapewni Ci to, co najlepsze w marce CUPRA.
           </p>
-          <MainButton variant="gray" class-name="mt-8">Umów jazdę próbną</MainButton>
+          <MainButton @click="scrollToForm" variant="gray" class-name="mt-8"
+            >Umów jazdę próbną</MainButton
+          >
         </div>
         <div>
           <img

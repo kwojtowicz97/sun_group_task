@@ -21,8 +21,12 @@
         href="tel:+48585066565"
         >+48 58 506 65 65</a
       >
-      <MainButton variant="white" class-name="ml-12">Zapytaj o ofertę</MainButton>
-      <MainButton variant="black" class-name="ml-6">Umów jazdę próbną</MainButton>
+      <MainButton @click="scrollToForm" variant="white" class-name="ml-12"
+        >Zapytaj o ofertę</MainButton
+      >
+      <MainButton @click="scrollToForm" variant="black" class-name="ml-6"
+        >Umów jazdę próbną</MainButton
+      >
     </div>
     <button @click="isMenuOpen = true" class="ml-auto xl:hidden">
       <img class="h-[25px]" src="@/assets/hamburger.svg" alt="menu" />
@@ -36,6 +40,7 @@
 <script setup lang="ts">
 import MainButton from '@/components/MainButton.vue'
 import MobileMenu from '@/components/MobileMenu.vue'
+import { scrollToForm } from '@/utils'
 import { ref } from 'vue'
 
 const isMenuOpen = ref(false)

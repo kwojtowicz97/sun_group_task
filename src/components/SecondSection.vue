@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MainButton from '@/components/MainButton.vue'
+import { scrollToForm } from '@/utils'
 </script>
 
 <template>
@@ -15,7 +16,9 @@ import MainButton from '@/components/MainButton.vue'
             Poczuj pełną wolność <br />
             jazdy dzięki licznym innowacjom.
           </h1>
-          <MainButton variant="white" class-name="mt-12">Umów jazdę próbną</MainButton>
+          <MainButton @click="scrollToForm" variant="white" class-name="mt-12"
+            >Umów jazdę próbną</MainButton
+          >
         </div>
       </div>
       <div class="flex xl:flex-row flex-col items-start">
@@ -26,7 +29,9 @@ import MainButton from '@/components/MainButton.vue'
             gracją, dynamizmem <br />
             i czystym wyrafinowaniem.
           </h1>
-          <MainButton variant="white" class-name="mt-12">Umów jazdę próbną</MainButton>
+          <MainButton @click="scrollToForm" variant="white" class-name="mt-12"
+            >Umów jazdę próbną</MainButton
+          >
         </div>
         <img class="h-[519px] w-full xl:w-[787px] object-cover" src="@/assets/photo5.webp" alt="" />
       </div>
@@ -38,7 +43,9 @@ import MainButton from '@/components/MainButton.vue'
             Idealny komfort. Unikalny wystrój wnętrza stworzony <br />
             w stylu CUPRY.
           </h1>
-          <MainButton variant="white" class-name="mt-12">Umów jazdę próbną</MainButton>
+          <MainButton @click="scrollToForm" variant="white" class-name="mt-12"
+            >Umów jazdę próbną</MainButton
+          >
         </div>
       </div>
     </div>

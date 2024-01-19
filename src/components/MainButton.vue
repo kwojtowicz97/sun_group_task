@@ -2,6 +2,7 @@
   <button
     :type="props.type"
     :class="['h-12', 'px-6', 'flex', 'items-center', 'box-border', variantClasses, className]"
+    @click="(e) => emit('click', e)"
   >
     <slot></slot>
   </button>
@@ -22,6 +23,8 @@ const props = defineProps({
     required: false
   }
 })
+
+const emit = defineEmits(['click'])
 
 const variants = {
   black: 'bg-primary-black text-white outline outline-black hover:bg-[#494949]',

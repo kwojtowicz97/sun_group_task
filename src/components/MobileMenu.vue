@@ -24,8 +24,8 @@
       >+48 58 506 65 65</a
     >
     <div class="flex flex-col w-full items-center mt-2 gap-4">
-      <MainButton variant="white" class-name="w-full">Zapytaj o ofertę</MainButton>
-      <MainButton variant="black" class-name="w-full">Umów jazdę próbną</MainButton>
+      <MainButton variant="white" class-name="w-full justify-center">Zapytaj o ofertę</MainButton>
+      <MainButton variant="black" class-name="w-full justify-center">Umów jazdę próbną</MainButton>
     </div>
   </div>
 </template>

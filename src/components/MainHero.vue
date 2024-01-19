@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MainButton from '@/components/MainButton.vue'
+import { scrollToForm } from '@/utils'
 </script>
 
 <template>
@@ -11,7 +12,9 @@ import MainButton from '@/components/MainButton.vue'
         Poznaj prawdziwą moc <br />
         i sportowego ducha marki.
       </h1>
-      <MainButton variant="gray" class-name="mt-12">Ruszaj na jazdę testową</MainButton>
+      <MainButton @click="scrollToForm" variant="gray" class-name="mt-12"
+        >Ruszaj na jazdę testową</MainButton
+      >
     </div>
   </div>
 </template>

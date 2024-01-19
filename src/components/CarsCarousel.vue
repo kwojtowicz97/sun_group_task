@@ -2,13 +2,7 @@
   <div class="w-full relative bg-[#F5F5F5]">
     <carousel :items-to-show="1" :wrap-around="true" :breakpoints="{ 900: { itemsToShow: 1.7 } }">
       <slide v-for="car in cars" :key="car.name">
-        <CarouselItem
-          :name="car.name"
-          :gross="car.gross"
-          :description="car.description"
-          :monthly="car.monthly"
-          :img="car.img"
-        />
+        <CarouselItem :car="car" />
       </slide>
 
       <template #addons>
