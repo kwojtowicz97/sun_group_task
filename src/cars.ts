@@ -9,35 +9,35 @@ export type Car = {
 export const cars: Car[] = [
   {
     name: 'Cupra Formentor',
-    img: 'src/assets/cars/fermentor.png',
+    img: 'src/assets/fermentor.png',
     description: 'Maksymalna prędkość: 204 KM/H Moc silnika: 150 KM',
     gross: '127 800',
     monthly: '1439'
   },
   {
     name: 'Cupra Leon',
-    img: 'src/assets/cars/leon.png',
+    img: 'src/assets/leon.png',
     description: 'Maksymalna prędkość: 245 KM/H Moc silnika: 300 KM',
     gross: '152 400',
     monthly: '1553'
   },
   {
     name: 'Cupra Leon Sportstourer',
-    img: 'src/assets/cars/leon_st.png',
+    img: 'src/assets/leon_st.png',
     description: 'Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM',
     gross: '156 200',
     monthly: '1601'
   },
   {
     name: 'Cupra Ateca',
-    img: 'src/assets/cars/ateca.png',
+    img: 'src/assets/ateca.png',
     description: 'Maksymalna prędkość: 247 KM/H Moc silnika: 300 KM',
     gross: '220 700',
     monthly: '2334'
   },
   {
     name: 'Nowa Cupra Born',
-    img: 'src/assets/cars/cupra.png',
+    img: 'src/assets/cupra.png',
     description: 'Akumulator 58 kWh moc do 204 KM²',
     gross: `179 600`,
     monthly: '1943'
